@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verona Gardens Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-------header------>
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="">
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="accomodation.html">ACCOMODATION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><button class="primary-btn"><a href="accomodation.html">BOOK NOW</a></button></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "100vh";
+            } else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <section class="news-section">
+        <div class="container">
+            <h1>Latest News & Updates</h1>
+
+            <!-- News Item 1 -->
+            <div class="news-item">
+                <div class="news-image">
+                    <img src="images/news/gym.jpg" alt="News 1">
+                </div>
+                <div class="news-content">
+                    <h2>Grand Opening of Our Gym</h2>
+                    <span class="news-date">September 15, 2024</span>
+                    <p>We are thrilled to announce the grand opening of our state-of-the-art gym at Verona Gardens Resort! Join us on [insert date] for an unforgettable event filled with exciting activities. Our new facility features cutting-edge equipment,
+                        spacious workout areas, and a variety of fitness classes led by certified trainers. Guests can enjoy free fitness assessments, group classes, and special workshops designed to cater to all fitness levels. As part of our opening
+                        celebration, we’ll be offering exclusive membership discounts, complimentary refreshments, and a chance to win exciting prizes. Whether you're a fitness enthusiast or just starting your wellness journey, our gym provides the perfect
+                        environment to achieve your fitness goals. Don’t miss this opportunity to explore our new facilities, meet our trainers, and take the first step towards a healthier lifestyle!</p>
+                </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="news-item">
+                <div class="news-image">
+                    <img src="images/news/wine.jpeg" alt="News 2">
+                </div>
+                <div class="news-content">
+                    <h2>Upcoming Wine Tasting Event</h2>
+                    <span class="news-date">October 10, 2024</span>
+                    <p>Join us for an exclusive wine tasting event at our resort. Experience the finest local and international wines, accompanied by gourmet appetizers in a beautiful outdoor setting.</p>
+
+                </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="news-item">
+                <div class="news-image">
+                    <img src="images/news/award.png" alt="News 3">
+                </div>
+                <div class="news-content">
+                    <h2>Verona Gardens Wins "Best Resort" Award</h2>
+                    <span class="news-date">August 25, 2024</span>
+                    <p>We are honored to have received the prestigious "Best Resort" award for 2024. Thank you to all of our guests and staff for making this achievement possible.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="images/logo/logo.png" alt="">
+                <p>Follow us on social media and stay updated with our latest offers, events, and resort highlights!</p>
+
+                <div class="icon">
+                    <a href="https://web.facebook.com/don.martinez.5680"><i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/YourResortPage" target="_blank"><i class="fa fa-instagram"></i>
+                    </a><a href="https://www.twitter.com/YourResortPage" target="_blank"><i class="fa fa-twitter"></i></a>
+
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Links</h2>
+                <ul>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="accomodation.html">Accommodation</a></li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="box">
+                <h2>Contact Us</h2>
+                <p>We're here to make your stay unforgettable! Reach out to us through any of the following methods for inquiries, reservations, or assistance</p>
+                <i class="fa fa-location-dot"></i>
+                <label>Mosocho, Close to Riverside.</label><br>
+                <i class="fa fa-phone"></i>
+                <label>(+254)781998758</label> <br>
+                <i class="fa fa-envelope"></i>
+                <label>veronagardens@gmail.com</label>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright@2024. All rights reserved.Designed by Dondylan.</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

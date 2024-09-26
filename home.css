@@ -1,0 +1,1513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_space {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn {
+    padding: 10px 40px;
+    background: rgba(229, 5, 5, 0.811);
+    font-weight: bold;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: #fbb234;
+    color: black;
+}
+
+.secondary-btn {
+    padding: 15px 40px;
+    background: none;
+    border: 1px solid white;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+
+
+/*------header------*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    line-height: 10vh;
+    padding: 0 20px;
+    background: white;
+    z-index: 1000;
+}
+
+header img {
+    margin: 20px 0;
+    width: 170px;
+    height: 70px;
+}
+
+header ul {
+    display: inline-block;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    color: #000;
+    margin: 0 10px;
+    transition: 0.5s ease;
+}
+
+header ul li a:hover {
+    border: none;
+    border-bottom: 2px solid rgba(229, 5, 5, 0.811);
+}
+
+header i {
+    margin: 0 20px;
+}
+
+header button {
+    padding: 13px 40px;
+}
+
+header .navlinks span {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    header ul {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #009f7f;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        text-align: center;
+        z-index: 9;
+    }
+    header ul li {
+        display: block;
+    }
+    header ul li a {
+        color: white;
+    }
+    header i {
+        color: #fff;
+    }
+    header .navlinks span {
+        color: #000;
+        display: block;
+        cursor: pointer;
+        line-height: 10vh;
+        font-size: 25px;
+    }
+    .home .content .owl-carousel .item img {
+        max-height: 700px;
+    }
+}
+
+
+/*------header------*/
+
+
+/*------home------*/
+
+.home {
+    margin-top: 20vh;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.home img {
+    width: 100%;
+    height: calc(100vh - 10vh);
+}
+
+.home .text {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.home .text h1 {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: serif;
+}
+
+.home .content .owl .item .text p {
+    margin: 20px 0;
+}
+
+.home .content .owl-carousel .button button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.home button {
+    margin-right: 20px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    background: gray !important;
+    color: #fff;
+}
+
+.owl-nav .owl-prev {
+    left: 0;
+}
+
+.owl-nav .owl-next {
+    right: 0;
+}
+
+
+/*------home------*/
+
+
+/*------book------*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.book {
+    padding: 40px 0;
+    background: #282834;
+    color: #fff;
+}
+
+h1 {
+    font-family: serif;
+}
+
+.book h1 {
+    font-size: 28px;
+}
+
+.book h1 span {
+    color: rgba(229, 5, 5, 0.811);
+}
+
+.book input {
+    padding: 20px;
+}
+
+.book input:nth-child(5) {
+    background: rgba(229, 5, 5, 0.811);
+}
+
+
+/*------book------*/
+
+
+/*------about us------*/
+
+.left,
+.right {
+    width: 50%;
+    padding: 30px;
+}
+
+.top {
+    margin-top: 80px;
+}
+
+.mtop {
+    margin-top: 40px;
+}
+
+.about .container .left .heading h1 {
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top: 50px;
+}
+
+.heading h2 {
+    margin: 30px 0;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: serif;
+}
+
+.about .heading {
+    top: 55px;
+}
+
+.about {
+    position: relative;
+}
+
+.about .left {
+    margin-top: 30px;
+}
+
+.about p {
+    font-size: 15px;
+}
+
+.about .container .left button a {
+    color: #fff;
+}
+
+.about button {
+    margin: 30px 0;
+}
+
+.about .right img {
+    width: 500px;
+}
+
+
+/*------about us------*/
+
+
+/*------counter------*/
+
+.counter {
+    background-image: url('images/counter/7866ce3e.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    color: #080808;
+}
+
+.counter .grid {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    place-items: center;
+    padding-top: 20px;
+}
+
+.counter h1 {
+    font-size: 50px;
+}
+
+.counter hr {
+    width: 70%;
+    margin: 5px auto;
+    background: #7cf142;
+    height: 2px;
+    border: none;
+}
+
+
+/*------counter------*/
+
+
+/*------rooms------*/
+
+.rooms {
+    position: relative;
+}
+
+.rooms .container .heading h1 {
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top: 70px;
+}
+
+.rooms .text {
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.rooms i {
+    font-size: 12px;
+    color: #fbb234;
+    margin: 15px 0;
+    margin-right: 5px;
+}
+
+.rooms p {
+    margin: 20px 0;
+    opacity: 0.7;
+}
+
+.rooms h3 {
+    font-size: 30px;
+    line-height: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: rgba(229, 5, 5, 0.811);
+}
+
+.rooms h3 span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+}
+
+.rooms .container .content .owl-carousel .items .image img {
+    width: 100%;
+    height: 250px;
+}
+
+.rooms .container .content .owl-carousel .items .button .primary-btn a {
+    color: #fff;
+}
+
+.rooms .container .content .owl-carousel .items .button:hover {
+    color: #000;
+}
+
+.rooms .container .content .owl-carousel .items .button .primary-btn a:hover {
+    color: #000;
+}
+
+
+/*------rooms------*/
+
+
+/*------gallery------*/
+
+.gallery .container .heading h1 {
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top: -30px;
+}
+
+.gallery .owl-nav .owl-prev,
+.gallery .owl-nav .owl-next {
+    position: absolute;
+    top: -40%;
+    height: 50px;
+    width: 50px;
+    background: rgba(229, 5, 5, 0.811) !important;
+}
+
+.gallery .owl-nav .owl-prev i,
+.gallery .owl-nav .owl-next i {
+    color: #fff;
+}
+
+.gallery .owl-nav .owl-prev {
+    left: 90%;
+}
+
+.gallery .owl-nav .owl-next {
+    right: 5;
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery .content .owl-carousel .items .img img {
+    width: 100%;
+    height: 150px;
+}
+
+.gallery .img {
+    position: relative;
+}
+
+.gallery .img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(229, 5, 5, 0.811);
+    width: 255px;
+    height: 251px;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    z-index: 3;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.overlay h3 {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.gallery .items:hover .overlay,
+.gallery .items:hover .img::after {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/*------gallery------*/
+
+
+/*------services------*/
+
+.services {
+    position: relative;
+}
+
+.services .container .heading h1 {
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top: -30px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.services .left {
+    padding: 30px 0;
+}
+
+.services .box {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.5s;
+    padding: 20px;
+}
+
+.services .box .text {
+    padding: 30px 0;
+    border: 1px dashed #fff;
+}
+
+.services i {
+    font-size: 50px;
+    color: rgba(229, 5, 5, 0.811);
+    transition: 0.5s;
+}
+
+.services h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.services .container .content .right .img img {
+    width: 500px;
+    height: 75vh;
+}
+
+.services .box:hover {
+    background: rgba(229, 5, 5, 0.811);
+    color: #fff;
+    cursor: pointer;
+}
+
+.services .box:hover i,
+.services .box:hover h3 {
+    color: #fff;
+}
+
+
+/*------services------*/
+
+
+/*------customer------*/
+
+.Customer {
+    background-image: url("images/customer/01.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.Customer .container {
+    max-width: 70%;
+}
+
+.Customer .item {
+    padding: 7% 0;
+}
+
+.Customer i {
+    width: 100px;
+    height: 100px;
+    background: rgba(229, 5, 5, 0.811);
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.Customer p {
+    line-height: 20px;
+}
+
+.Customer h3 {
+    margin-top: 20px;
+    color: rgba(229, 5, 5, 0.811);
+}
+
+.Customer span {
+    font-size: 15px;
+}
+
+.owl-carousel2 .owl-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 46%;
+}
+
+.owl-carousel2 .owl-dots i {
+    color: rgba(229, 5, 5, 0.811);
+}
+
+.owl-carousel2 .owl-dots i:hover button {
+    color: rgba(229, 5, 5, 0.811) !important;
+}
+
+.owl-carousel2 span {
+    border: 2px solid #fff;
+    background: transparent !important;
+}
+
+.owl-carousel2 .active span {
+    background: rgba(229, 5, 5, 0.811) !important;
+    border: 2px solid rgba(229, 5, 5, 0.811);
+}
+
+.Customer .owl-carousel .item {
+    transition: opacity 0.4s ease;
+    /* Control fade transition speed */
+}
+
+
+/*------customer------*/
+
+
+/*------news------*/
+
+.news {
+    position: relative;
+}
+
+.news .container .heading h1 {
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top: -10px;
+}
+
+.news i {
+    color: rgba(229, 5, 5, 0.811);
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.news label {
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+.news .left {
+    padding: 30px 0;
+    width: 65%;
+}
+
+.news .container .content .left .items .image img {
+    width: 333px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.news .right {
+    width: 35%;
+    margin-left: 30px;
+}
+
+.news .right .box .img img {
+    width: 100px;
+    height: 100px;
+}
+
+.news .items p {
+    padding-top: 20px;
+    border-top: 1px solid #89898b;
+}
+
+.news .box:nth-child(1) {
+    padding-top: 0;
+}
+
+.news .box:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.news .stext {
+    padding: 0 0 0 20px;
+}
+
+
+/*------news------*/
+
+
+/*------newsletter------*/
+
+.newsletter {
+    position: relative;
+}
+
+.newsletter .container {
+    background: rgba(229, 5, 5, 0.811);
+    padding: 40px 30px;
+    position: absolute;
+    top: -70px;
+    left: 8%;
+    width: 100%;
+}
+
+.newsletter h1 {
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.newsletter .container input {
+    padding: 20px;
+    color: #fff;
+}
+
+.newsletter input:nth-last-child(2) {
+    width: 80%;
+    background: #3f2b14;
+}
+
+.newsletter input:nth-last-child(1) {
+    margin-left: 20px;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+/*------newsletter------*/
+
+
+/*-----footer-----*/
+
+footer {
+    background: #282834;
+    color: #b6b7b9;
+    padding: 10% 0 5% 0;
+}
+
+footer .grid {
+    grid-template-columns: 6fr 3fr 3fr;
+}
+
+footer .grid .box img {
+    width: 100px;
+}
+
+footer p {
+    color: #b6b7b9;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+footer .icon i {
+    margin: 20px 20px 20px 0;
+    color: #b6b7b9;
+}
+
+footer .icon i:hover {
+    color: red;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer li {
+    margin-bottom: 20px;
+}
+
+footer li:hover {
+    color: red;
+}
+
+footer li a {
+    color: gray;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: red;
+}
+
+footer i {
+    color: rgba(229, 5, 5, 0.811);
+    margin: 20px 0;
+    margin-right: 20px;
+}
+
+footer label {
+    margin: 20px 0;
+}
+
+.legal {
+    padding: 15px 0;
+    background: #282834;
+    color: #696b6d;
+    border-top: 1px solid #89898b;
+}
+
+
+/*-----footer-----*/
+
+
+/*-----acommodation page-----*/
+
+.booking-section {
+    max-width: 800px;
+    margin: 6rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.booking-section h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.booking-section label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.booking-section input,
+.booking-section select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.booking-section input:focus,
+.booking-section select:focus {
+    border-color: rgba(229, 5, 5, 0.811);
+    outline: none;
+}
+
+.booking-section button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(229, 5, 5, 0.811);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.booking-section button:hover {
+    background-color: #fbb234;
+    color: #000;
+}
+
+.room-descriptions {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.room-descriptions h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rooms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.room {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 350px;
+}
+
+.room:hover {
+    transform: scale(1.05);
+}
+
+.room img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 5px solid red;
+}
+
+.room h3 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.room p {
+    font-size: 16px;
+    color: #777;
+    margin: 0 20px 20px;
+}
+
+.room-descriptions .rooms .room h3 {
+    color: red;
+    font-size: 35px;
+}
+
+.room-descriptions .rooms .room .primary-btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.room-descriptions .rooms .room .primary-btn a {
+    color: white;
+}
+
+.book-now-btn:hover {
+    background-color: #e8594f;
+}
+
+
+/*-----acommodation page-----*/
+
+
+/*-----gallery page-----*/
+
+main {
+    padding: 20px;
+}
+
+main section .heading h1 {
+    top: 13%;
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+}
+
+main section .heading p {
+    margin-bottom: 50px;
+}
+
+.gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+
+/*-----gallery page-----*/
+
+
+/*------about us page-----*/
+
+
+/* About Section */
+
+.hotelBio {
+    padding: 120px 0 30px;
+    background-color: #f9f9f9;
+    color: #333;
+    align-items: center;
+}
+
+.hotelBio h1 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #282834;
+}
+
+.hotelBio h1 strong {
+    font-size: 40px;
+    color: rgba(229, 5, 5, 0.811);
+}
+
+.hotelBio h1 img {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: auto;
+}
+
+.hotelBio span {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.hotelBio p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.hotelBio .heading03 {
+    font-size: 28px;
+    color: #282834;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px 0 30px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(229, 5, 5, 0.811);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+/*------about us page-----*/
+
+
+/*--------contact page-----*/
+
+.contact {
+    padding: 150px 0 60px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.contact h1,
+.contact h2 {
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact .contact-info {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact .contact-info li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.contact .contact-info li i {
+    color: rgba(229, 5, 5, 0.811);
+    margin-right: 10px;
+}
+
+.location {
+    text-align: center;
+}
+
+.location p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    max-width: 100%;
+}
+
+
+/*--------contact page-----*/
+
+
+/*-------news page-----*/
+
+.news-section {
+    padding: 120px 0 30px;
+    background-color: #f9f9f9;
+}
+
+.news-section h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #282834;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.news-image {
+    flex: 1;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+}
+
+.news-content {
+    flex: 2;
+    padding: 30px;
+}
+
+.news-content h2 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #282834;
+    margin-bottom: 10px;
+}
+
+.news-content .news-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.news-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.news-content .read-more {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(229, 5, 5, 0.811);
+    text-decoration: none;
+}
+
+.news-content .read-more:hover {
+    color: #fbb234;
+}
+
+@media only screen and (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+    }
+    .news-image img {
+        border-radius: 10px 10px 0 0;
+    }
+    .news-content {
+        padding: 20px;
+    }
+    .news-content h2 {
+        font-size: 20px;
+    }
+    .news-content p {
+        font-size: 14px;
+    }
+}
+
+
+/*-------news page-----*/
+
+@media only screen and (max-width: 768px) {
+    .home {
+        color: #fff;
+        height: 20vh;
+    }
+    .home .content .owl .item img {
+        width: 100%;
+        height: 20vh;
+    }
+    .left,
+    .right {
+        width: 100%;
+    }
+    .book {
+        margin-top: 500px;
+    }
+    .book h1 {
+        margin-bottom: 20px;
+    }
+    .container.flex,
+    .book .flex_space {
+        flex-direction: column;
+    }
+    .book .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .counter .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery .owl-carousel .owl-nav .owl-prev {
+        left: 80%;
+    }
+    .gallery .owl-nav .owl-prev {
+        left: 75%;
+    }
+    .gallery .owl-nav .owl-prev,
+    .gallery .owl-nav .owl-next {
+        top: -45%;
+    }
+    .rooms .owl-nav .owl-prev,
+    .rooms.owl-nav .owl-next {
+        top: -10%;
+    }
+    .rooms .owl-carousel .owl-nav .owl-prev {
+        left: 80%;
+        margin-top: 320px;
+    }
+    .rooms .owl-carousel .owl-nav .owl-next {
+        top: 35%;
+    }
+    .services .flex_space {
+        flex-direction: column;
+    }
+    .services .container .flex_space .right .img img {
+        width: 100%;
+        height: 40%;
+    }
+    .Customer {
+        height: 60vh;
+    }
+    .Customer .container {
+        max-width: 80%;
+    }
+    .owl-carousel2 .owl-dots {
+        bottom: 0;
+        left: 38.5%;
+    }
+    .news .content.flex {
+        flex-direction: column;
+    }
+    .news .left {
+        padding: 30px 0;
+        width: 100%;
+    }
+    .news .right {
+        width: 100%;
+    }
+    .newsletter {
+        position: relative;
+    }
+    .newsletter .container {
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 30px;
+        position: relative;
+    }
+    .newsletter .flex_space {
+        flex-direction: column;
+    }
+    .newsletter input:nth-last-child(2) {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .newsletter input:nth-last-child(1) {
+        margin: 0;
+    }
+    footer .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*------acommogation page------*/
+    .room-descriptions .rooms {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*------acommogation page------*/
+    /*------gallery page------*/
+    main section .heading {
+        margin-top: 100px;
+    }
+    main section .heading h1 {
+        top: 14%;
+        font-size: 80px;
+    }
+    main section .heading p {
+        margin-bottom: 50px;
+    }
+    /*------gallery page------*/
+}
+
+@media only screen and (max-width: 360px) {
+    .home .content .owl-carousel .item img {
+        max-height: 500px;
+        width: 100%;
+    }
+    .home .content .owl-carousel .item .text h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .home .content .owl-carousel .item .text p {
+        font-size: 10px;
+    }
+    .home .content .owl-carousel .item .text .flex .primary-btn,
+    .secondary-btn {
+        font-size: 15px;
+        padding: 5px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .book {
+        margin-top: 30px;
+    }
+    .left,
+    .right {
+        width: 100%;
+    }
+    .book {
+        margin-top: 400px;
+    }
+    .book h1 {
+        margin-bottom: 20px;
+    }
+    .container.flex,
+    .book .flex_space {
+        flex-direction: column;
+    }
+    .book .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about .container .left .heading h1 {
+        top: 100px;
+        font-size: 50px;
+        text-align: center;
+    }
+    .about .container .left .heading h2 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .about .container .left p {
+        font-size: 15px;
+    }
+    .about .container .left .button {
+        align-items: center;
+    }
+    .about .container .right img {
+        width: 250px;
+        margin-top: -20%;
+    }
+    .counter {
+        max-width: 100%;
+    }
+    .counter .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .counter .container {
+        max-width: 80%;
+    }
+    .counter .container .box {
+        width: 40px;
+        height: 40px;
+    }
+    .counter .container .box h1 {
+        font-size: 30px;
+    }
+    .counter .container .bottom {
+        margin-top: 40px;
+    }
+    .rooms .container .heading h1 {
+        margin-top: 30px;
+        font-size: 70px;
+    }
+    .rooms .owl-nav .owl-prev,
+    .rooms.owl-nav .owl-next {
+        top: -10%;
+    }
+    .rooms .owl-carousel .owl-nav .owl-prev {
+        margin-left: -20%;
+        margin-top: 360px;
+    }
+    .rooms .owl-carousel .owl-nav .owl-next {
+        margin-top: 32px;
+        margin-left: 10px;
+    }
+    .gallery .owl-carousel .owl-nav .owl-prev {
+        left: 80%;
+    }
+    .gallery .container .heading h1 {
+        font-size: 70px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .gallery .owl-nav .owl-prev {
+        left: 75%;
+    }
+    .gallery .owl-nav .owl-prev,
+    .gallery .owl-nav .owl-next {
+        top: -55555%;
+    }
+    .news .container .heading h1 {
+        font-size: 70px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .news .container .content .left {
+        display: flex;
+        flex-direction: column;
+    }
+    .services .container .heading h1 {
+        font-size: 70px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}

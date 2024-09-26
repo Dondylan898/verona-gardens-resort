@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verona Gardens Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-------header------>
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="">
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="accomodation.html">ACCOMODATION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><button class="primary-btn">BOOK NOW</button></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "100vh";
+            } else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-------header------>
+
+    <!-----about us----->
+    <section class="hotelBio">
+        <div class="container">
+            <h1>
+                <strong>Welcome to</strong>
+                <img src="images/logo/logo.png" alt="Verona Gardens Resort Logo" />
+            </h1>
+            <span>A Perfect World of Comfort and Luxury in Style</span>
+            <p>Verona Gardens Resort invites guests into a world of comfort and luxury. The resort is the perfect destination for a peaceful stay, offering royal comfort at reasonable pricing. With modern amenities and traditional charm, guests experience
+                warmth, opulence, and hospitality. The combination of beautiful suites, superb architecture, and exquisite decor make your stay feel like home.</p>
+            <p>Our resort boasts beautifully designed rooms and high-quality services to ensure a wonderful stay. Whether you're here for leisure or a business retreat, Verona Gardens Resort is the ideal destination. Our friendly staff and exceptional hospitality
+                leave a lasting impression on our guests from all over the globe.</p>
+            <p>We take care of the diverse preferences of both domestic and international guests, offering a blend of modern amenities, comfort, and excellent service execution. At Verona Gardens Resort, guests enjoy meticulously crafted interiors, world-class
+                service, and value for money.</p>
+
+
+            <div class="heading03">What We Offer</div>
+            <p>If you are looking for a perfect blend of luxury, modern amenities, and comfort, Verona Gardens Resort is your solution. We stand out with high-end services and affordable pricing. Guests can enjoy comfort and pampering that ensures a memorable
+                stay.
+            </p>
+            <p>Our services include top-class conference facilities, gourmet dining, a travel desk, and a host of other features to ensure maximum satisfaction for all guests.</p>
+
+            <div class="heading03">Why Choose Verona Gardens Resort?</div>
+            <p>Verona Gardens Resort offers a world-class stay for both leisure and business travelers. Our guests enjoy personalized services, modern dining options, business facilities, and a serene atmosphere, making us the best choice for an unforgettable
+                stay.
+            </p>
+            <ul class="aboutPoints">
+                <li><i class="fa fa-check"></i> Well-equipped luxury suites & deluxe rooms</li>
+                <li><i class="fa fa-check"></i> Full-service travel desk</li>
+                <li><i class="fa fa-check"></i> State-of-the-art business meeting rooms</li>
+                <li><i class="fa fa-check"></i> Fine dining experiences</li>
+                <li><i class="fa fa-check"></i> Centrally air-conditioned rooms</li>
+            </ul>
+
+            <div class="heading03">Special Attractions</div>
+            <ul class="aboutPoints">
+                <li><i class="fa fa-check"></i> Complimentary Breakfast & Transfers</li>
+                <li><i class="fa fa-check"></i> Chef's Special Culinary Delights</li>
+                <li><i class="fa fa-check"></i> Access to nearby medical care facilities</li>
+                <li><i class="fa fa-check"></i> Non-smoking rooms available</li>
+                <li><i class="fa fa-check"></i> Exclusive Last-Minute Offers</li>
+            </ul>
+
+
+        </div>
+    </section>
+    <!-----about us----->
+
+
+
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="images/logo/logo.png" alt="">
+                <p>Follow us on social media and stay updated with our latest offers, events, and resort highlights!</p>
+
+                <div class="icon">
+                    <a href="https://web.facebook.com/don.martinez.5680"><i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/YourResortPage" target="_blank"><i class="fa fa-instagram"></i>
+                    </a><a href="https://www.twitter.com/YourResortPage" target="_blank"><i class="fa fa-twitter"></i></a>
+
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Links</h2>
+                <ul>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="accomodation.html">Accommodation</a></li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="box">
+                <h2>Contact Us</h2>
+                <p>We're here to make your stay unforgettable! Reach out to us through any of the following methods for inquiries, reservations, or assistance</p>
+                <i class="fa fa-location-dot"></i>
+                <label>Mosocho, Close to Riverside.</label><br>
+                <i class="fa fa-phone"></i>
+                <label>(+254)781998758</label> <br>
+                <i class="fa fa-envelope"></i>
+                <label>veronagardens@gmail.com</label>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright@2024. All rights reserved.Designed by Dondylan.</p>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

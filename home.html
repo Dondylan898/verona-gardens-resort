@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verona Gardens Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+    <!-------header------>
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="" />
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="accomodation.html">ACCOMODATION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li>
+                        <button class="primary-btn">
+                <a href="accomodation.html">BOOK NOW</a>
+              </button>
+                    </li>
+                </ul>
+                <span class="fa fa-bars don" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+    <!-------header------>
+
+    <!-------home------>
+    <section class="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="images/oulook/outlook.webp" alt="" />
+                    <div class="text">
+                        <h1>Spend your Holidays</h1>
+                        <p>
+                            Verona Gardens Resort is an ideal destination to avail royal comfort in reasonable pricing. For its modern amenities and traditional charm, guests here feel exalted and full of joy. Accommodation in Presidential Suites and Verona Suites amid superb architecture
+                            and excellent decorations gives the combined feeling of warmth, opulence and hospitality of a home..
+                        </p>
+                        <div class="button flex">
+                            <button class="primary-btn">
+                  <a href="about.html">READ MORE</a>
+                </button>
+                            <button class="secondary-btn">
+                  <a href="contact.html">CONTACT US</a>
+                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/oulook/outlook2.webp" alt="" />
+                    <div class="text">
+                        <h1>Spend your Holidays</h1>
+                        <p>
+                            Verona Gardens Resort is an ideal destination to avail royal comfort in reasonable pricing. For its modern amenities and traditional charm, guests here feel exalted and full of joy. Accommodation in Presidential Suites and Verona Suites amid superb architecture
+                            and excellent decorations gives the combined feeling of warmth, opulence and hospitality of a home...
+                        </p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/oulook/outlook3.jpg" alt="" />
+                    <div class="text">
+                        <h1>Spend your Holidays</h1>
+                        <p>
+                            Verona Gardens Resort is an ideal destination to avail royal comfort in reasonable pricing. For its modern amenities and traditional charm, guests here feel exalted and full of joy. Accommodation in Presidential Suites and Verona Suites amid superb architecture
+                            and excellent decorations gives the combined feeling of warmth, opulence and hospitality of a home..
+                        </p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <a href="contact.html"><button class="secondary-btn">CONTACT US</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-------home------>
+
+    <script>
+      var menulist = document.getElementById("menulist");
+      menulist.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menulist.style.maxHeight == "0px") {
+          menulist.style.maxHeight = "100vh";
+        } else {
+          menulist.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        navText: [
+          "<i class = 'fa fa-chevron-left'></i>",
+          "<i class = 'fa fa-chevron-right'></i>",
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+
+    <!------book----->
+    <section class="book">
+      <div class="container flex_space">
+        <div class="text">
+          <h1><span>Book</span> Your Rooms</h1>
+        </div>
+        <div class="form">
+          <form class="grid">
+            <p>Check-in-date<input type="date" placeholder="Arrival Date" /></p>
+            <p>
+              Check-out-date<input type="date" placeholder="Departure Date" />
+            </p>
+            <input type="number" placeholder="Adults" />
+            <input type="number" placeholder="Children" />
+            <input type="submit" value="CHECK AVAILABILITY" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!------book----->
+
+    <!-----about----->
+    <section class="about top">
+      <div class="container flex">
+        <div class="left">
+          <div class="heading">
+            <h1>WELCOME</h1>
+            <h2>Crowny Hotel</h2>
+          </div>
+          <p>
+            Welcome to Verona Gardens Hotel, a serene retreat nestled in the
+            heart of nature, where luxury meets comfort. Our hotel is designed
+            to provide a perfect getaway for families, couples, and business
+            travelers alike. With beautifully appointed rooms offering stunning
+            views of our lush gardens and tranquil surroundings, every moment
+            spent here is an experience in relaxation. Enjoy delightful culinary
+            offerings at our on-site restaurant, unwind by our sparkling
+            swimming pool, or host your next event in our spacious meeting
+            rooms. Our dedicated staff is committed to ensuring your stay is
+            nothing short of exceptional, making Verona Gardens the ideal
+            destination for your next escape.
+          </p>
+          <button class="primary-btn"><a href="about.html">ABOUT US</a></button>
+                        </div>
+                        <div class="right">
+                            <img src="images/about/about1.webp" alt="" />
+                        </div>
+                    </div>
+    </section>
+    <!-----about----->
+
+    <!-----counter---->
+    <section class="counter top">
+        <div class="container grid">
+            <div class="box">
+                <h1>Free</h1>
+                <hr />
+                <span>Luggage Assistance</span>
+            </div>
+            <div class="box">
+                <h1>Free</h1>
+                <hr />
+                <span>Dining Reservations</span>
+            </div>
+            <div class="bottom">
+                <div class="box">
+                    <h1>Free</h1>
+                    <hr />
+                    <span>Event Bookings</span>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="box">
+                    <h1>Free</h1>
+                    <hr />
+                    <span>Local Information</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----counter---->
+
+    <!------rooms----->
+    <section class="rooms">
+        <div class="container top">
+            <div class="heading">
+                <h1>EXPLORE</h1>
+                <h2>Our Rooms</h2>
+                <p>
+                    In Budget hotels in Kisii, Verona Gardens Resort stands ahead for its world-class facilities and room services. The facilities like conference rooms, business centers and room services are of world class. 32 high-quality rooms are there with all modern
+                    services and facilities to treat guests in the best possible way. All rooms are ideally decorated with top-class interiors to please the tourists. With a high comfort level between the guests and the staff, we ensure maximum comfort
+                    and joy for our guests through our services and rooms.
+                </p>
+            </div>
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/rooms/room1.jpg" alt="" />
+                        </div>
+                        <div class="text">
+                            <h2>Super Deluxe Rooms</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>
+                                We offer Super Deluxe Rooms for the guests to their utmost joy and fun. These rooms ensure that guests could enjoy their stay at the hotel. The super deluxe rooms lend comfort and pleasant view of the hotels to delight the guests immensely. With the round
+                                the clock room service, all modern facilities, excellent interiors and fabulous, they keep guests totally enthralled. Our super deluxe rooms have everything to make your stay a world-class experience with us. Apart from
+                                quiet stay, the AC facilities and other amenities enhance the quality of stay.
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">
+                    <a href="accomodation.html">BOOK NOW</a>
+                  </button>
+                                <h3>
+                                    Ksh.8,000
+                                    <span>
+                      <br />
+                      Per Night</span
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="image">
+                <img src="images/rooms/room12.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Super Deluxe Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  We offer Super Deluxe Rooms for the guests to their utmost joy
+                  and fun. These rooms ensure that guests could enjoy their stay
+                  at the hotel. The super deluxe rooms lend comfort and pleasant
+                  view of the hotels to delight the guests immensely. With the
+                  round the clock room service, all modern facilities, excellent
+                  interiors and fabulous, they keep guests totally enthralled.
+                  Our super deluxe rooms have everything to make your stay a
+                  world-class experience with us. Apart from quiet stay, the AC
+                  facilities and other amenities enhance the quality of stay.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">
+                    <a href="accomodation.html">BOOK NOW</a>
+                  </button>
+                  <h3>
+                    Ksh.8,000
+                    <span>
+                      <br />
+                      Per Night</span
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="image">
+                <img src="images/rooms/room13.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Super Deluxe Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  We offer Super Deluxe Rooms for the guests to their utmost joy
+                  and fun. These rooms ensure that guests could enjoy their stay
+                  at the hotel. The super deluxe rooms lend comfort and pleasant
+                  view of the hotels to delight the guests immensely. With the
+                  round the clock room service, all modern facilities, excellent
+                  interiors and fabulous, they keep guests totally enthralled.
+                  Our super deluxe rooms have everything to make your stay a
+                  world-class experience with us. Apart from quiet stay, the AC
+                  facilities and other amenities enhance the quality of stay.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">
+                    <a href="accomodation.html">BOOK NOW</a>
+                  </button>
+                  <h3>
+                    Ksh.8,000
+                    <span>
+                      <br />
+                      Per Night</span
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="image">
+                <img src="images/rooms/room2.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Executive Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Our executive rooms provide King Size Bed or Twin Beds for
+                  double occupancy. The rooms have exceptionally been designed
+                  with fully equipped working desk to accomplish all the needs
+                  and specifications of today’s Business guests and travellers.
+                  Well maintained bathroom filled with amenities with hot and
+                  cold water round the clock further add to the charm of staying
+                  with us. TV with more than 30 national & International news,
+                  movies & entertainment channels, or avail the room service any
+                  time of the day. Dial facility, wi-fi-connection, well stocked
+                  soft bar, tea / coffee maker etc are some other facilities for
+                  guests to enjoy at our executive rooms.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    Ksh.10,000
+                    <span>
+                      <br />
+                      Per Night</span
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="image">
+                <img src="images/rooms/room22.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Executive Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Our executive rooms provide King Size Bed or Twin Beds for
+                  double occupancy. The rooms have exceptionally been designed
+                  with fully equipped working desk to accomplish all the needs
+                  and specifications of today’s Business guests and travellers.
+                  Well maintained bathroom filled with amenities with hot and
+                  cold water round the clock further add to the charm of staying
+                  with us. TV with more than 30 national & International news,
+                  movies & entertainment channels, or avail the room service any
+                  time of the day. Dial facility, wi-fi-connection, well stocked
+                  soft bar, tea / coffee maker etc are some other facilities for
+                  guests to enjoy at our executive rooms.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    Ksh.10,000
+                    <span>
+                      <br />
+                      Per Night</span
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="image">
+                <img src="images/rooms/room23.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Executive Rooms</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Our executive rooms provide King Size Bed or Twin Beds for
+                  double occupancy. The rooms have exceptionally been designed
+                  with fully equipped working desk to accomplish all the needs
+                  and specifications of today’s Business guests and travellers.
+                  Well maintained bathroom filled with amenities with hot and
+                  cold water round the clock further add to the charm of staying
+                  with us. TV with more than 30 national & International news,
+                  movies & entertainment channels, or avail the room service any
+                  time of the day. Dial facility, wi-fi-connection, well stocked
+                  soft bar, tea / coffee maker etc are some other facilities for
+                  guests to enjoy at our executive rooms.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    Ksh.10,000
+                    <span>
+                      <br />
+                      Per Night</span
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="image">
+                <img src="images/rooms/room3.webp" alt="" />
+              </div>
+              <div class="text">
+                <h2>Classic Suite Room</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Our classic rooms immensely delight the guests for their
+                  facilities and allied services. They carry finest and modern
+                  facilities so that guests feel the best. The amenities like
+                  Cable Television and Telephone/Voice Mail are there to fully
+                  amuse the guests. Amid brilliant interiors and furniture, the
+                  gusts are sure to feel a luxurious touch away from the home.
+                  All modern facilities coupled with fine set-up of chairs and
+                  decorative tables enable the classic room to ensure the
+                  comfort of standard class. With classic rooms, we ensure that
+                  guests never feel away from the home and enjoy everything
+                  around fully.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    Ksh.12,000
+                    <span>
+                      <br />
+                      Per Night</span
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="image">
+                <img src="images/rooms/room32.avif" alt="" />
+              </div>
+              <div class="text">
+                <h2>Classic Suite Room</h2>
+                <div class="rate flex">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p>
+                  Our classic rooms immensely delight the guests for their
+                  facilities and allied services. They carry finest and modern
+                  facilities so that guests feel the best. The amenities like
+                  Cable Television and Telephone/Voice Mail are there to fully
+                  amuse the guests. Amid brilliant interiors and furniture, the
+                  gusts are sure to feel a luxurious touch away from the home.
+                  All modern facilities coupled with fine set-up of chairs and
+                  decorative tables enable the classic room to ensure the
+                  comfort of standard class. With classic rooms, we ensure that
+                  guests never feel away from the home and enjoy everything
+                  around fully.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    Ksh.12,000
+                    <span>
+                      <br />
+                      Per Night</span
+                    >
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------rooms----->
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 40,
+        nav: true,
+        dots: false,
+        navText: [
+          "<i class = 'fa fa-chevron-left'></i>",
+          "<i class = 'fa fa-chevron-right'></i>",
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+            margin: 10,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+    <!-------gallery----->
+    <section class="gallery">
+      <div class="container top">
+        <div class="heading">
+          <h1>PHOTOS</h1>
+          <h2>Our Gallery</h2>
+          <p>
+            Welcome to our gallery, where each image showcases the elegance and
+            comfort of our resort. Explore our luxurious rooms, the refreshing
+            swimming pool, the vibrant restaurant, well-equipped meeting rooms,
+            lush gardens, and the delightful children's playground. These
+            moments capture the beauty and relaxation that await you at our
+            resort, offering the perfect blend of comfort and fun for every
+            guest.
+          </p>
+        </div>
+      </div>
+      <div class="content mtop">
+        <div class="owl-carousel owl-theme">
+          <div class="items">
+            <div class="img">
+              <img src="images/gallery/01.jpeg" alt="" />
+            </div>
+            <div class="overlay">
+              <span class="fa fa-plus"></span>
+                                    <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+
+                        <div class="items">
+                            <div class="img">
+                                <img src="images/gallery/02.jpeg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="images/gallery/03.jpeg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="images/gallery/04.jpeg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="images/gallery/05.jpeg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="images/gallery/06.jpeg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="images/gallery/07.jpeg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="images/gallery/08.jpeg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="images/gallery/09.jpeg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="images/gallery/010.jpeg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h3>Photo Title Here</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-------gallery----->
+
+    <script>
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHover: true,
+            navText: [
+                "<i class = 'fa fa-chevron-left'></i>",
+                "<i class = 'fa fa-chevron-right'></i>",
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 4,
+                },
+                1000: {
+                    items: 6,
+                },
+            },
+        });
+    </script>
+
+    <!------services----->
+    <section class="services top">
+        <div class="container">
+            <div class="heading">
+                <h1>SERVICES</h1>
+                <h2>Our Services</h2>
+                <p>
+                    At Verona Gardens Hotel, we pride ourselves on offering a comprehensive range of services to ensure a memorable experience for our guests. Indulge in exquisite dining at our on-site restaurant, where our talented chefs craft a diverse menu to tantalize
+                    your taste buds. For those seeking relaxation, our inviting bar serves a variety of beverages in a cozy atmosphere, perfect for unwinding after a long day. Our luxurious accommodations provide a peaceful haven, while the sparkling
+                    swimming pool offers a refreshing escape. Celebrate your special moments in our beautifully landscaped wedding garden or host productive meetings in our well-equipped conference hall. Additionally, our state-of-the-art gym allows you
+                    to maintain your fitness routine while enjoying your stay. Whether you're here for leisure or business, Verona Gardens Hotel is dedicated to providing exceptional services tailored to your needs.
+                </p>
+            </div>
+            <div class="content flex_space">
+                <div class="left grid2">
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                            <h3>Delicious Food</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-person-swimming"></i>
+                            <h3>Swimming</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-utensils"></i>
+                            <h3>Inhouse Restaurant</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-martini-glass"></i>
+                            <h3>Bar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img">
+                        <img src="images/services/hotel-room-service.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------services----->
+
+    <!------customer----->
+    <section class="Customer top">
+        <div class="container">
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>
+                        We recently stayed at Verona Gardens Resort (Feb. 15 & 16). It was our second stay there and both times have been great. Your staff there has always been the best! This trip we were particularly impressed by your staff. What a delightful woman and so
+                        nice and friendly and accommodating. Just wanted to pass that along to the powers that be. Thanks!
+                    </p>
+                    <h3>Josephat Ombisi</h3>
+                    <label>Josephat Ombisi</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>
+                        Our stay was fantastic thank you. Everything was clean and efficient. The staff were very helpful, especially service boy who was always there to answer questions, help with bookings, direct ins, everything.
+                    </p>
+                    <h3>Onkoba Onchomba</h3>
+                    <label>Onkoba Onchomba</label>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>
+                        We had a very good stay at your hotel. The price was excellent, the staff was friendly and helpful and the room was clean and the bed comfortable. What more could we ask? . Thank you for a great stay!
+                    </p>
+                    <h3>Ouma Philip</h3>
+                    <label>Ouma Philip</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(".owl-carousel2").owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHover: true,
+            navText: [
+                "<i class = 'fa fa-chevron-left'></i>",
+                "<i class = 'fa fa-chevron-right'></i>",
+            ],
+            smartSpeed: 1000, // Transition speed for movement
+            onInitialized: function(event) {
+                // Set initial opacity for items
+                $(event.target).find(".owl-item").css("opacity", 0);
+                $(event.target).find(".owl-item.active").css("opacity", 1);
+            },
+            onChanged: function(event) {
+                var $items = $(event.target).find(".owl-item");
+                // Fade out all items
+                $items.css("opacity", 0);
+                // Fade in the current item
+                $items.eq(event.item.index).css("opacity", 1);
+            },
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 1,
+                },
+                1000: {
+                    items: 1,
+                },
+            },
+        });
+    </script>
+    <!------customer----->
+
+    <!-----news----->
+    <section class="news top rooms">
+        <div class="container">
+            <div class="heading">
+                <h1>NEWS</h1>
+                <h2>Our News</h2>
+                <p>
+                    Verona Gardens Resort is excited to share a series of upcoming enhancements and events designed to elevate your experience with us! We are currently expanding our amenities, including a state-of-the-art gym and a beautifully landscaped wedding garden,
+                    perfect for your special day. Additionally, we are launching a new seasonal menu at our restaurant, featuring locally sourced ingredients and vibrant flavors. Join us for our upcoming community event, where guests can enjoy live music,
+                    food tastings, and guided tours of our stunning facilities. Stay tuned for more updates as we continue to create unforgettable memories for our guests at Verona Gardens Resort!
+                </p>
+            </div>
+            <div class="content flex">
+                <div class="left grid2">
+                    <div class="items">
+                        <div class="image .don">
+                            <img src="images/news/liquor.jpg" alt="" />
+                        </div>
+                        <div class="text">
+                            <h2>Liquor Offers</h2>
+
+                            <p>
+                                We've just announced our liquor on the website.Don't miss on the exciting offers!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="images/news/swimming.jpeg" alt="" />
+                        </div>
+                        <div class="text">
+                            <h2>Free Swimming Training</h2>
+
+                            <p>
+                                Don't miss the exciting experience of our free swimming lessons
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/news/WIFI.png" alt="" />
+                        </div>
+                        <div class="stext">
+                            <h2>Free Wi-Fi</h2>
+                            <p>
+                                Get to experience free Wi-Fi only at Verona Gardens Resort.
+                            </p>
+                        </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <br />
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/news/room service.jpg" alt="" />
+                        </div>
+                        <div class="stext">
+                            <h2>Room Service</h2>
+                            <p>Get our super exciting room service from our waitresses.</p>
+                        </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <br />
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/news/free breakfast.jpeg" alt="" />
+                        </div>
+                        <div class="stext">
+                            <h2>Free Breakfast</h2>
+                            <p>
+                                Experience free breakfast right after a good night sleep .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----news----->
+
+
+    <!-----newsletter---->
+    <section class="newsletter mtop">
+        <div class="container flex_space">
+            <h1>Subscribe to our Newsletter</h1>
+            <input type="text" placeholder="Your Email" />
+            <input type="text" placeholder="Subscribe" />
+        </div>
+    </section>
+    <!-----newsletter---->
+
+    <!-----footer---->
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="images/logo/logo.png" alt="" />
+                <p>
+                    Follow us on social media and stay updated with our latest offers, events, and resort highlights!
+                </p>
+
+                <div class="icon">
+                    <a href="https://web.facebook.com/don.martinez.5680"><i class="fa fa-facebook"></i>
+            </a>
+                    <a href="https://www.instagram.com/YourResortPage" target="_blank"><i class="fa fa-instagram"></i> </a
+            ><a href="https://www.twitter.com/YourResortPage" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Links</h2>
+                <ul>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="accomodation.html">Accommodation</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Contact Us</h2>
+                <p>
+                    We're here to make your stay unforgettable! Reach out to us through any of the following methods for inquiries, reservations, or assistance
+                </p>
+                <i class="fa fa-location-dot"></i>
+                <label>Mosocho, Close to Riverside.</label><br />
+                <i class="fa fa-phone"></i>
+                <label>(+254)781998758</label> <br />
+                <i class="fa fa-envelope"></i>
+                <label>veronagardens@gmail.com</label>
+            </div>
+        </div>
+    </footer>
+    <!-----footer---->
+
+    <div class="legal">
+        <p class="container">
+            Copyright@2024. All rights reserved.Designed by Dondylan.
+        </p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

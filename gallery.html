@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verona Gardens Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-------header------>
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="">
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="accomodation.html">ACCOMODATION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><button class="primary-btn"><a href="accomodation.html">BOOK NOW</a></button></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "100vh";
+            } else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- Gallery Section -->
+    <main>
+        <section>
+            <div class="container top">
+                <div class="heading">
+                    <h1>PHOTOS</h1>
+                    <h2>Our Gallery</h2>
+                    <p>Welcome to our gallery, where each image showcases the elegance and comfort of our resort. Explore our luxurious rooms, the refreshing swimming pool, the vibrant restaurant, well-equipped meeting rooms, lush gardens, and the delightful
+                        children's playground. These moments capture the beauty and relaxation that await you at our resort, offering the perfect blend of comfort and fun for every guest.</p>
+                </div>
+            </div>
+        </section>
+        <section class="gal">
+            <div class="image-container">
+                <img src="images/gallery/01.jpeg" alt="Image 1">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/02.jpeg" alt="Image 2">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/03.jpeg" alt="Image 3">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/04.jpeg" alt="Image 4">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/05.jpeg" alt="Image 5">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/06.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/07.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/08.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/09.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/09.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/010.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/03.jpeg" alt="Image 3">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/07.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/07.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/07.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/07.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/07.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/07.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/07.jpeg" alt="Image 6">
+            </div>
+            <div class="image-container">
+                <img src="images/gallery/07.jpeg" alt="Image 6">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="images/logo/logo.png" alt="">
+                <p>Follow us on social media and stay updated with our latest offers, events, and resort highlights!</p>
+
+                <div class="icon">
+                    <a href="https://web.facebook.com/don.martinez.5680"><i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/YourResortPage" target="_blank"><i class="fa fa-instagram"></i>
+                    </a><a href="https://www.twitter.com/YourResortPage" target="_blank"><i class="fa fa-twitter"></i></a>
+
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Links</h2>
+                <ul>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="accomodation.html">Accommodation</a></li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="box">
+                <h2>Contact Us</h2>
+                <p>We're here to make your stay unforgettable! Reach out to us through any of the following methods for inquiries, reservations, or assistance</p>
+                <i class="fa fa-location-dot"></i>
+                <label>Mosocho, Close to Riverside.</label><br>
+                <i class="fa fa-phone"></i>
+                <label>(+254)781998758</label> <br>
+                <i class="fa fa-envelope"></i>
+                <label>veronagardens@gmail.com</label>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright@2024. All rights reserved.Designed by Dondylan.</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
